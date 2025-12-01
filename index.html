@@ -185,6 +185,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             font-size: 14px;
             margin-top: 5px;
         }
+        .discount-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff7a00, #ff3e3e);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+  }
+
+  .discount-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+
+  .discount-btn:active {
+    transform: scale(0.96);
+  }
     </style>
 </head>
 <body>
@@ -227,7 +248,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
 
-            <button type="submit">Claim My Discount</button>
+            <a href="https://vishnuvarthaan.github.io/Mazenet/products.html" class="discount-btn">
+    Claim My Discount
+</a>
         </form>
     </div>
 
@@ -241,8 +264,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             // You can capture this data for analytics/tracking here
             console.log('Lead captured:', { name, email });
             
-            // Redirect to the products page
-            window.location.href = 'https://vishnuvarthaan.github.io/Mazenet/products.html';
+
         });
     </script>
 </body>
